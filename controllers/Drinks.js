@@ -5,17 +5,17 @@ const drinks = [
         names: [
             {
                 name: 'Spiced-Oaxaca',
-                ingredients: [`Mezcal`, `Chocolate Bitters`, `West Indian Orange Bitters`, `Smoked Chilli Bitters`, `Chai Syrup` ],
+                ingredients: [`Mezcal`, `Chocolate-Bitters`, `West-Indian-Orange-Bitters`, `Smoked-Chilli-Bitters`, `Chai-Syrup` ],
                 price: 14
             },
             {
                 name: 'Scotch-Chai-Der',
-                ingredients: [`Glenfiddich`, `Cherry Almond`, `Sweet Vermouth`, `Plum Bitters`, `Molasses Bitters`, `House Apple Cider`, `Chai Syrup`],
+                ingredients: [`Glenfiddich`, `Cherry-Almond`, `Sweet-Vermouth`, `Plum-Bitters`, `Molasses-Bitters`, `House-Apple-Cider`, `Chai-Syrup`],
                 price: 17
             },
             {
                 name: 'Hawaiin-75',
-                ingredients: [`Pau Maui Vodka`, `Sparkling Wine`, `Triple Sec`, `Pineapple`, `Guava`, `Mango`, `Orange`],
+                ingredients: [`Pau-Maui-Vodka`, `Sparkling-Wine`, `Triple-Sec`, `Pineapple`, `Guava`, `Mango`, `Orange`],
                 price: 17
             },
         ],
@@ -76,33 +76,37 @@ const index = (req,res) => {
     res.send(drinks)
 }
 
-
-
-// //app.get(`/drinks/:category/:name`, drinkController.byCategorybyName)
-// //Worked with Billy, Kyndal, 
-// const byCategorybyName = (req, res) => {
+// const byCategory = (req, res) => {
 //     const categoryIndex = drinks.findIndex(element => element.category == req.params.category) 
-//     const nameIndex = drinks[categoryIndex].names.findIndex(element => element.name == req.params.name)
-//     if ((categoryIndex == -1) || (nameIndex == -1)) {
-//         res.send(`ERROR - This drink is unavailable`)
-//     } else {
-//         res.send(drinks[categoryIndex].names[nameIndex])
-//     }    
+//     res.send(drinks[categoryIndex])
 // }
 
 
-//app.get('/drinks/:category/:name', drinkController.byCategorybyName)
+// //app.get(`/drinks/:category/:name`, drinkController.byCategorybyName)
+// //Worked with Billy, Kyndal, Logan, Michael, Anthony, Darcy, etc.
+
+//https://stackoverflow.com/questions/59915006/express-route-check-if-req-params-parameter-is-empty#:~:text=You%20can%20use%20a%20simple,undefined%20%2C%200%20%2C%20or%20NaN%20.
+
 const byCategorybyName = (req, res) => {
-    const categoryIndex = drinks.findIndex(element => element.category == req.params.category)
+    
+    const categoryIndex = drinks.findIndex(element => element.category == req.params.category) 
     const nameIndex = drinks[categoryIndex].names.findIndex(element => element.name == req.params.name)
+
+    //first check if :name is empty. If so, return the full category
+    if (!req.params.name) {
+        if (categoryIndex == -1) {
+            return res.send(`ERROR - This drink category is unavailable`)
+         } else {
+            return res.send(drinks[categoryIndex])
+         }
+    } else //then check for the specific drink
     if ((categoryIndex == -1) || (nameIndex == -1)) {
         res.send(`ERROR - This drink is unavailable`)
     } else {
         res.send(drinks[categoryIndex].names[nameIndex])
-    }
+    }    
+    
 }
-
-
 
 
 const byID = (req, res) => {
@@ -112,6 +116,7 @@ const byID = (req, res) => {
 module.exports = {
     index,
     byID,
+    // byCategory,
     byCategorybyName
 }
 

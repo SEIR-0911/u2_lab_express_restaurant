@@ -25,15 +25,23 @@ app.get(`/appetizers/:id`, appetizerController.byID)
 app.get(`/appetizers/byName/:name`, appetizerController.byName)
 
 app.get('/entrees', entreeController.index)
+app.get(`/entrees/pizza/:name`, entreeController.pizzaByName)
 app.get(`/entrees/:id`, entreeController.byID)
+
+
 
 
 app.get('/desserts', dessertController.index)
 app.get(`/desserts/:id`, dessertController.byID)
 
 app.get('/drinks', drinkController.index)
+// app.get(`/drinks/:category`, drinkController.byCategory)
+app.get(`/drinks/:category/:name?`, drinkController.byCategorybyName)
 app.get(`/drinks/:id`, drinkController.byID)
-app.get(`/drinks/:category/:name`, drinkController.byCategorybyName)
+
+
+//Impossible - .get()only reads the first two parameters. An interm "menu" controller, is needed.
+// app.get(`/menu`, drinkController.index, dessertController.index, appetizerController.index)
 
 
 

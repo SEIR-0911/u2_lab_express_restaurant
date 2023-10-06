@@ -1,24 +1,37 @@
 const entrees = [
     {
-        name: `Pizza`,
-        priceUSD: 15,
-        needsSpoon: false
+        name: `Deep-Dish`,
+        priceUSD: 25,
+        category: `pizza`
     }, 
     {
         name: `Pasta`,
         priceUSD: 14,
-        needsSpoon: false
+        category: `pasta`
     }, 
     {
-        name: `Steak`,
-        priceUSD: 45,
-        needsSpoon: false
+        name: `Tavern-Cut`,
+        priceUSD: 20,
+        category: `Pizza`
     }, 
 ]
 
 
 const index = (req,res) => {
     res.send(entrees)
+}
+
+//app.get(`/entrees/pizza/:name`, entreeController.pizzaByName)
+//array.toLowerCase()
+const pizzaByName = (req, res) => {
+    const pizzas = entrees.filter((entree) => entree.category.toLowerCase() == `pizza`)
+
+    // if (req.params.name==false) {
+    //     return res.send(pizzas)
+    // } else {
+        const pizzaIndex = pizzas.findIndex(element => element.name.toLowerCase() == req.params.name.toLowerCase()) 
+        pizzaIndex == -1 ? res.send(`ERROR - This pizza is unavailable`) : res.send(pizzas[pizzaIndex])
+    // }
 }
 
 const byID = (req, res) => {
@@ -28,5 +41,6 @@ const byID = (req, res) => {
 
 module.exports = {
     index,
-    byID
+    byID,
+    pizzaByName
 }
