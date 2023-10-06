@@ -30,7 +30,20 @@ const getDessert = (req, res) => {
     res.send(Desserts[req.params.id])
 }
 
+// In appetizersController.js
+const getDessertByName = (req, res) => {
+    const nameToSearch = req.params.name;
+    // Find the appetizer with the matching name
+    const matchingDessert = Desserts.find(Dessert => Dessert.DessertName === nameToSearch);
+    if (matchingDessert) {
+        res.send(matchingDessert);
+    } else {
+        res.status(404).send('Dessert not found');
+    }
+}
+
 module.exports = {
     getDesserts,
-    getDessert
+    getDessert,
+    getDessertByName
 }

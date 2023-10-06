@@ -22,9 +22,11 @@ app.get('/Appetizer/:id', appetizersController.getAppetizer)
 
 
 app.get('/Desserts', dessertsController.getDesserts)
+app.get('/DessertName/:name', dessertsController.getDessertByName);
 app.get('/getDessert/:id', dessertsController.getDessert)
 
 app.get('/Entrees', entreesController.getEntrees)
+app.get('/EntreeName/:name', entreesController.getEntreeByName);
 app.get('/getEntree/:id', entreesController.getEntree)
 
 app.listen(PORT, () => console.log(`Server is running on ${PORT}`))

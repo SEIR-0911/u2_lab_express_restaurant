@@ -32,7 +32,20 @@ const getEntree = (req, res) => {
     res.send(Entrees[req.params.id])
 }
 
+// In appetizersController.js
+const getEntreeByName = (req, res) => {
+    const nameToSearch = req.params.name;
+    // Find the appetizer with the matching name
+    const matchingEntree = Entrees.find(Entree => Entree.EntreeName === nameToSearch);
+    if (matchingEntree) {
+        res.send(matchingEntree);
+    } else {
+        res.status(404).send('Entree not found');
+    }
+}
+
 module.exports = {
     getEntrees,
-    getEntree
+    getEntree,
+    getEntreeByName
 }
