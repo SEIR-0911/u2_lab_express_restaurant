@@ -1,0 +1,20 @@
+{
+  "name": "u2_lab_express_restaurant",
+  "version": "1.0.0",
+  "description": "# The Express-taurant Menu App",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
