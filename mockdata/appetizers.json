@@ -1,0 +1,39 @@
+[
+  {
+    "app_id": 1,
+
+    "name": "Easy Bruschetta",
+    "description": "Need a crowd-pleasing appetizer or snack? This Italian appetizer has become ubiquitous all over the world because of its easy-to-love flavors. Who can say no to crunchy, toasted bread piled with tasty toppings? The most popular way to serve bruschetta in America is with chopped tomatoes, garlic and basil: more traditional Italian bruschetta toppings are mushrooms, artichokes, figs, and more. Get creative with seasonal ingredients for this one!",
+    "price": 18
+  },
+  {
+    "app_id": 2,
+    "name": "Eggplant Caponata",
+    "description": "Here’s an Italian appetizer that we’re head over heels with: caponata! This Sicilian specialty is an appetizer and a side dish, essentially a sweet and sour ratatouille with cooked eggplant, tomatoes and onion. It’s often spread on crusty bread as an appetizer or antipasti (as the Italians would say). It’s so full of tangy, garlicky flavor that once you’ve taken one bite, you’ll likely want to devour the entire dish.",
+    "price": 15
+  },
+  {
+    "app_id": 3,
+    "name": "Baked Goat Cheese Dip",
+    "description": " There’s something about the sweet, garlicky fire roasted tomato sauce and the creamy, tangy chevre that makes you park yourself right in front of the dish. Scoop it up with crusty bread slices and it tastes like a pie from your favorite pizzeria…only better. Every time we serve this, it gets rave reviews.",
+    "price": 23
+  },
+  {
+    "app_id": 4,
+    "name": "Caprese Salad",
+    "description": "Caprese salad in Italian is insalata caprese, which means “the salad from Capri.” It’s a simple salad of fresh tomatoes, fresh mozzarella and basil leaves, seasoned with salt and pepper. Like pizza margherita, each of the ingredients corresponds to the colors of the Italian flag: red, white and green.",
+    "price": 17
+  },
+  {
+    "app_id": 5,
+    "name": "Marinated Olives",
+    "description": "This Italian-style dish will make an olive lover out of anyone. Using the right olives here results in smooth, rich flavor: not briny or overly salty. The garlic, lemon and herbs make a symphony of flavor! Every time we make these and set them out on the table, people go crazy for them.",
+    "price": 7
+  },
+  {
+    "app_id": 6,
+    "name": "Marinated Mozzarella Balls",
+    "description": "Here’s a fun and easy Italian appetizer recipe that takes just minutes of hands on time: Marinated Mozzarella Balls! You’ll be surprised by how quickly this comes together and how satisfying the flavors are for such little effort. Marinade fresh mozzarella balls in a mix of olive oil, chopped herbs and red pepper flakes, and the flavor is a burst of bold and herbaceous.",
+    "price": 12
+  }
+]
