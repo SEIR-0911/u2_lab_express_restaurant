@@ -1,0 +1,44 @@
+[
+  {
+    "entr_id": 1,
+    "name": "Sun-Dried Tomato and Arugula Pizza",
+    "description": "The secret to this crispy pizza: giving the dough lots of time to rise so it's pliant enough to stretch very thin. Make it the night before to allow for maximum flavor development,",
+    "img": "https://www.foodandwine.com/thmb/If3Jz4zSzWUbmoCzYf7o8A3CeWI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/201104-r-xl-sun-dried-tomato-and-arugula-pizza-2000-1c17701c2203444088bde22d253ab80d.jpg",
+    "price": 23
+  },
+  {
+    "entr_id": 2,
+    "name": "Sausage and Three-Cheese Lasagna",
+    "description": "The style of this gooey lasagna is called free-form because the pasta can be arranged in different ways — for instance, folded over the filling — instead of traditionally layered.",
+    "img": "https://www.foodandwine.com/thmb/zx7MkGXfOOMrD5Ij2W4xmsiNC8k=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/HD-201001-r-sausage-and-cheese-lasagna-8ecfec3927c74dcaaa6a171ead169d79.jpg",
+    "price": 27
+  },
+  {
+    "entr_id": 3,
+    "name": "Grilled Fish with Artichoke Caponata",
+    "description": "To top meaty mahimahi, chef Michael White makes a vinegary caponata (a Sicilian relish) with fresh artichoke hearts, not the traditional tomatoes and eggplant. Trimming artichokes can be time-consuming, so buy marinated artichoke hearts from the grocery store instead.",
+    "img": "https://www.foodandwine.com/thmb/Zmr82Jmu-wAIDmCCYNl08xoaAcY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/HD-201007-r-artichoke-fish-4c6db77a075547e4a99ab13082220b04.jpg",
+    "price": 37
+  },
+  {
+    "entr_id": 4,
+    "name": "Beef Brasato with Pappardelle and Mint",
+    "description": "Chef Chris Cosentino braises beef shank and oxtail in red wine to make a brasato he serves with housemade mint pappardelle. This easier version uses just beef shank; feel free to purchase the fresh pappardelle from the store instead of making your own.",
+    "img": "https://www.foodandwine.com/thmb/nLoDCXPmepgH5p_arqrzrQjvZ0Y=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/HD-201104-r-beef-brasato-pappardelle-fa5647721a374a7f8a6b42c685fdb09a.jpg",
+    "price": 25
+  },
+  {
+    "entr_id": 5,
+    "name": "Spinach and Ricotta Gnudi",
+    "description": "Chef Tommy Habetz describes gnudi as ravioli filling without the pasta. Gnudi are of Tuscan origin, and a fresh Tuscan white wine",
+    "img": "https://www.foodandwine.com/thmb/EDBYdEnIXpd1ZIZj1NKFQCbSRHk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/200601-xl-spinach-and-ricotta-gnudi-with-tomato-butter-sauce-2000-3339aff961954fb4a2d6b2c09bd4576f.jpg",
+    "price": 23
+  },
+  {
+    "entr_id": 6,
+    "name": "Swordfish Sicilian-Style",
+    "description": "In 2018, Food & Wine named this recipe from the late, legendary cookbook author Marcella Hazan as one of our 40 best. Hazan joined F&W as a contributing editor in 1992; of all the wonderful recipes she created, our all-time favorite is this quick-cooking swordfish, where an oregano-infused sauce imparts bright flavor to hot-off-the-grill steaks.",
+    "img": "https://www.foodandwine.com/thmb/p-zxMVf6VFHXrCXF4QQ4Ax4P8nE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/swordfish-sicilian-style-XL-RECIPE0918-ad25ac1c91ec414d8bf8be84462622ff.jpg",
+    "price": 42
+  }
+]
