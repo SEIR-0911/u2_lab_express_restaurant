@@ -1,0 +1,37 @@
+[
+  {
+    "des_id": 1,
+    "name": "Strawberry Gelato",
+    "description": "To guarantee homemade gelato's luscious consistency and purity of flavor, il laboratorio del gelato owner Jon Snyder suggests thickening gelato with cornstarch rather than eggs. The result has less palate-coating fat than ice cream and lets the fruit shine.",
+    "img": "https://www.foodandwine.com/thmb/eEUf4_gVpeLPh2296Q7bue_snsM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/strawberry-gelato-xl-recipe0618-57f389e0528e4d00a980e600b37099cb.jpg",
+    "price": 10
+  },
+  {
+    "des_id": 2,
+    "name": " Mixed-Nut-Milk Panna Cotta",
+    "description": "These delicate custards are a great way to showcase the subtle, nutty flavor of homemade nut milk.",
+    "img": "https://www.foodandwine.com/thmb/jW_WFRrDiRqeKfOeBs_TNl1PWLI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/HD-201501-r-mixed-nut-milk-panna-cotta-eb7239b1f83647a3b9b3184cfa67400a.jpg",
+    "price": 7
+  },
+  {
+    "des_id": 3,
+    "name": " Chocolate-and-Pistachio Biscotti",
+    "description": "Chef Kevin Sbraga varies these wonderful nutty biscotti, sometimes dipping them in melted dark chocolate for an extra layer of flavor.",
+    "img": "https://www.foodandwine.com/thmb/WclDMi9NOfwdN6Meva4YbNizCqs=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/HD-201012-r-biscotti-7d12200080544806868bc62028cb7c75.jpg",
+    "price": 5
+  },
+  {
+    "des_id": 4,
+    "name": " Pumpkin-Gingersnap Tiramisù",
+    "description": "Pumpkin pie meets tiramisù, with layers of pumpkin-mascarpone custard and gingersnaps brushed with Calvados syrup. In the freezer, the flavors and textures meld to form a deliciously creamy dessert.",
+    "img": "https://www.foodandwine.com/thmb/_Bym5psE8JuQ66HtHpSRAuJJLz4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/HD-201010-r-pumpkin-tiramisu-fae94c6f5ea246e2a5cd74a01e38261b.jpg",
+    "price": 11
+  },
+  {
+    "des_id": 5,
+    "name": " Zabaglione with Strawberries",
+    "description": "We love this zabaglione (a sweet custard spiked with marsala wine) served warm right off the stovetop, but it's also a great make-ahead dessert: just add a bit of whipped cream and chill.",
+    "img": "https://www.foodandwine.com/thmb/EgseuKtU3Lpr8SXsmB8YljyIKHU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/HD-zabaglioue-qfs-r-1f4069a3b59048d7a3d6dbcdd0dfdf60.jpg",
+    "price": 8
+  }
+]
