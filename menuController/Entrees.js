@@ -52,7 +52,25 @@ const getEntreesById = (req, res) => {
 	res.send(entrees[req.params.id])
 }
 
+const filterEntrees = (req, res) => {
+	try {
+		const { minimumPrice, maximumPrice } = req.query
+
+		let filterEntrees = entrees.filter((entree) => {
+			return (
+				(!minimumPrice || entree.price >= parseFloat(minimumPrice)) &&
+				(!maximumPrice || entree.price <= parseFloat(maximumPrice))
+			)
+		})
+
+		res.send(filterEntrees)
+	} catch (error) {
+		res.status(404).send('Sorry, we cannot find that!')
+	}
+}
+
 module.exports = {
 	getEntrees,
 	getEntreesById,
+	filterEntrees,
 }

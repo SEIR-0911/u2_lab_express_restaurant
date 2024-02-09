@@ -44,7 +44,25 @@ const getDessertsById = (req, res) => {
 	res.send(desserts[req.params.id])
 }
 
+const filterDesserts = (req, res) => {
+	try {
+		const { minimumPrice, maximumPrice } = req.query
+
+		let filterDesserts = desserts.filter((dessert) => {
+			return (
+				(!minimumPrice || dessert.price >= parseFloat(minimumPrice)) &&
+				(!maximumPrice || dessert.price <= parseFloat(maximumPrice))
+			)
+		})
+
+		res.send(filterDesserts)
+	} catch (error) {
+		res.status(404).send('Sorry, we cannot find that!')
+	}
+}
+
 module.exports = {
 	getDesserts,
 	getDessertsById,
+	filterDesserts,
 }
